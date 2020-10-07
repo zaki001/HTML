@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Ceremony</title>
+
 </head>
 
 <body>
+	<div>
+	<h1>does our company needs more ceremony?</h1>
+	<p style="font-family: verdana;">You have to wirte your frist-name, last-name to first to be able to answer our quetions.</p>
 	<label for="fname">FirstName</label>
-	<input type="text" name="fname"><br><br>
+	<input type="text" name="fname" maxlength="35" size="20"><br><br>
 	<label for="lname">LastName</label>
 	<input type="text" name="lname"><br><br>
-	<p>click on image to open the link</p>
+	</div>
 
-	<button type="button"><a href="https://media2.giphy.com/media/349qKnoIBHK1i/giphy.gif"></a></button>
+	<div>
+	<label for="company"><strong>Write about yourself</strong></label><br><br>
+	<textarea for="company" rows="4" cols="30" style="background-color: #F0F8FF;"></textarea>
+	</div>
 
+	<div>
+	<p style="font-family: verdana;"><strong>tränar du något?</strong></p>
+
+	<!-- när man gör två vals alternativ så ska man välja en av dem-->
+	<input type="radio" value="Yes">Yes</input>
+	<input type="radio" value="No">No</input>
+	</div>
+	
+	<div>
+	<!-- man kan göra checkboxer på det sätter för att kunna välja flera alternativ-->
+	<p style="font-family: verdana;"><strong>What ways does the company prefer to read about interesting things?</strong></p>
+	<input type="checkbox" value="Böcker">Böcker</input>
+	<input type="checkbox" value="Tidningar">Tidningar</input>
+	<input type="checkbox" value="Online">Online</input>
+	</div>
+
+	<div>
+	<p style="font-family: verdana;"><strong>välj din favoritgenre.</strong></p>
+	<select>
+		<option>Action</option>
+		<option>komedi</option>
+		<option>Romantik</option>
+		<option>Skräck</option>
+		<option>Drama</option>
+	</select><br><br>
+
+	<button type="submit">submit</button>
+	</div>
+
+	
 </body>
 </html>
